@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log ("DOM Loaded");
+    console.log ("DOM Loaded now");
     const generateBtn = document.getElementById('btn-key-gen');
     const generatedKeyDisplay = document.getElementById('text-key-gen');
     const inputDisplay = document.getElementById('input-display');
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let inputPassword = '';
 
     function generateKey() {
+        console.log ("Generate Key pressed!");
         generatedKey = Math.floor(100000 + Math.random() * 900000).toString();
         generatedKeyDisplay.textContent = generatedKey;
         inputPassword = '';
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generateBtn.addEventListener('click', generateKey);
 
     keypadButtons.forEach(button => {
-        if (button.id !== 'backspaceBtn' && button.id !== 'clearBtn') {
+        if (button.id !== 'btn-backspace' && button.id !== 'btn-clear' && button.id !== 'btn-submit') {
             button.addEventListener('click', handleKeypadClick);
         }
     });
