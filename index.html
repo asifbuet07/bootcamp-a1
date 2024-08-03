@@ -10,13 +10,15 @@
   <body>
     <div class="container">
       <div class="key-generator">
-        <button class="btn-key-generator">Generate Secret Key</button>
-        <div class="text-key">******</div>
+        <button id="btn-key-gen" class="btn-key-generator">
+          Generate Secret Key
+        </button>
+        <div id="text-key-gen" class="text-key">******</div>
       </div>
       <div class="pin-keyboard-box">
         <div class="pin-header">
           <div><h1>Enter PIN:</h1></div>
-          <div class="pin-display">123456</div>
+          <div id="input-display" class="pin-display"></div>
         </div>
         <div class="pin-keyboard">
           <button class="keyboard-btn">1</button>
@@ -29,10 +31,11 @@
           <button class="keyboard-btn">8</button>
           <button class="keyboard-btn">9</button>
           <button class="keyboard-btn">0</button>
-          <button class="keyboard-btn backspace">X</button>
-          <button class="keyboard-btn clear">Clear</button>
-          <button class="keyboard-btn submit">Submit</button>
+          <button id="btn-backspace" class="keyboard-btn backspace">X</button>
+          <button id="btn-clear" class="keyboard-btn clear">Clear</button>
+          <button id="btn-submit" class="keyboard-btn submit">Submit</button>
         </div>
+        <div id="message"></div>
       </div>
     </div>
   </body>
