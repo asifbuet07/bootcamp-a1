@@ -2,3 +2,110 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  background-color: white;
+  margin: 20px 100px 20px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/******** Key Generator part ********/
+
+.key-generator {
+  background-color: #343434;
+  margin: 2px;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  border-radius: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-key-generator {
+  background-color: rgb(62, 62, 193);
+  width: 150px;
+  height: 70px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border-color: aliceblue;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.text-key {
+  background-color: #696969;
+  width: 130px;
+  padding: 20px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+/******** PIN Keyboard part ********/
+.pin-keyboard-box {
+  background-color: #343434;
+  margin: 2px;
+  width: 50%;
+  height: 500px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  margin-right: 10px;
+}
+
+.pin-display {
+  background-color: #696969;
+  width: 130px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.pin-keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.keyboard-btn {
+  background-color: #a9a9a9;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.backspace {
+  background-color: rgb(246, 189, 82);
+}
+
+.clear {
+  background-color: rgb(233, 68, 68);
+}
+
+.submit {
+  background-color: rgb(55, 239, 55);
+  width: 100%;
+}
